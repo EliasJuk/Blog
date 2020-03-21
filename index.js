@@ -1,8 +1,15 @@
 const express = require('express')
 const app = express()
+const bodyParser = require('body-parser')
 
-//View Engine
-    app.set("view engine", "ejs")
+//CONFIG
+    //View Engine
+        app.set("view engine", "ejs")
+    //Statics
+        app.use(express.static('public'))
+    //Body Parser
+        app.use(bodyParser.urlencoded({ extends: false }))
+        app.use(bodyParser.json())
 
 //ROUTES
     app.get("/", (req, res)=> {
