@@ -1,9 +1,12 @@
 const express = require('express')
 const app = express()
 
+//View Engine
+    app.set("view engine", "ejs")
+
 //ROUTES
     app.get("/", (req, res)=> {
-        res.send("BEM VINDO AO SITE")
+        res.render("index")
     })
 
 //CONFIG
