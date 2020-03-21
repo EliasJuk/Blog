@@ -3,6 +3,10 @@ const app = express()
 const bodyParser = require('body-parser')
 const connection = require('./database/database')
 
+//Import models module
+const Article = require('./articles/Article')
+const Category = require('./categories/Category')
+
 //Import routes module
 const categoriesController = require("./categories/categoriesController")
 const articleController = require("./articles/articleController")

@@ -12,4 +12,6 @@ const Category = connection.define('categories',{
     } //SLUG IS ADDRESS TO CATEGORY
 })
 
+//Category.sync({ force: true })
+
 module.exports = Category
