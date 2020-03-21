@@ -1,6 +1,11 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const connection = require('./database/database')
+
+//Import routes module
+const categoriesController = require("./categories/categoriesController")
+const articleController = require("./articles/articleController")
 
 //CONFIG
     //View Engine
@@ -8,13 +13,26 @@ const bodyParser = require('body-parser')
     //Statics
         app.use(express.static('public'))
     //Body Parser
-        app.use(bodyParser.urlencoded({ extends: false }))
+        app.use(bodyParser.urlencoded({ extended: false }))
         app.use(bodyParser.json())
+    // Database
+        connection.authenticate()
+            .then(()=>{
+                console.log('\x1b[42m\x1b[30mConexao feita com sucesso!\x1b[0m')
+            }).catch((error)=>{
+                console.log('\x1b[41m'+error+'\x1b[0m')
+            })
+
+//OTHER ROUTES
+    //SET OTHER ROUTES FROM CATEGORIES
+    app.use('/',categoriesController) //Prefix '/'
+    app.use('/',articleController)
 
 //ROUTES
-    app.get("/", (req, res)=> {
-        res.render("index")
-    })
+    //LOCAL
+        app.get("/", (req, res) => {
+            res.render("index")
+        })
 
 //CONFIG
     //START SERVER
