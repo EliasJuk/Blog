@@ -1,4 +1,4 @@
-# blog-completo
+# BLOG Completo
 
 ## Estrutura
 >O projeto segue os padrões de projeto no modelo **MVC (Model View Controller)** ou seja a aplicação é divida por funcionalidades em varios arquivos separados que trabalham de forma independente entre si, onde os mesmos são invocados quando realmente são necessarios.
