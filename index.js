@@ -33,7 +33,7 @@ const articleController = require("./articles/articleController")
     app.use('/',articleController)
 
 //ROUTES
-    //LOCAL
+    //MAIN
         app.get("/", (req, res) => {
             res.render("index")
         })
