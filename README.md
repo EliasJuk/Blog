@@ -6,4 +6,5 @@
 
 ## EDITOR DE TEXTOS
 >**Download:** https://www.tiny.cloud/get-tiny/self-hosted/
+
 >**Traduções:** https://www.tiny.cloud/get-tiny/language-packages/
