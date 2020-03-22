@@ -5,4 +5,5 @@
 >O responsavel por controlar as rotas fora do arquivo principal do projeto é um module chamado **express-router**.
 
 ## EDITOR DE TEXTOS
->https://www.tiny.cloud/get-tiny/self-hosted/
+>**Download:** https://www.tiny.cloud/get-tiny/self-hosted/
+>**Traduções:** https://www.tiny.cloud/get-tiny/language-packages/
