@@ -9,7 +9,7 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <th>Id</th>
                     <th>Titulo</th>
                     <th>Slug</th>
                     <th>Category</th>
@@ -17,8 +17,15 @@
                 </tr>
             </thead>
             <tbody>
-
-
+                <% articles.forEach(article => { %>
+                    <tr>
+                        <th><%= article.id %></th>
+                        <th><%= article.title %></th>
+                        <th><%= article.slug %></th>
+                        <th><%= article.category.title %></th>
+                        <th>Ações</td>
+                    </tr>
+                    <% }) %>
             </tbody>
         </table>
     </div>
