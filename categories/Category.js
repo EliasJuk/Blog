@@ -12,6 +12,6 @@ const Category = connection.define('categories',{
     } //SLUG IS ADDRESS TO CATEGORY
 })
 
-//Category.sync({ force: true })
+//Category.sync({ force: true }) //Remover o comentario somente quando precizar gerar essa tabela
 
 module.exports = Category
