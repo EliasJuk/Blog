@@ -1,15 +1,22 @@
 <%- include ('partials/header.ejs')  %>
 <%- include ('partials/homenavbar.ejs')  %>
 <body>
-
     <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, world!</h1>
+            <p class="lead">Esse é um blog simples em express</p>
+            <hr class="my-4">
+            <p>Descrição detalhada</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+        <hr>
         <% articles.forEach(article => { %>
             <div class="card">
                 <div class="card-header">
                     <h4><%= article.title %></h4>
                 </div>
                 <div class="card-body">
-
+                    <a href='/<%= article.slug  %>' class="btn btn-success">Ler Artigo</a>
                 </div>
             </div><br>
         <% }) %>

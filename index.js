@@ -39,6 +39,23 @@ const articleController = require("./articles/articleController")
                 res.render("index", { articles: articles })
             })
         })
+    //ARTIGOS
+        app.get("/:slug",(req, res) => {
+            var slug = req.params.slug;
+            Article.findOne({
+                where: {
+                    slug: slug
+                } 
+            }).then(article => {
+                if(article != undefined){
+                    res.render("article",{article: article})
+                }else{
+                    res.redirect("/")
+                }
+            }).catch( err => {
+                res.redirect("/")
+            })
+        })
 
 //CONFIG
     //START SERVER
