@@ -33,4 +33,24 @@ router.post("/articles/save", (req, res) => {
     })
 })
 
+//DELEÇÃO DE ARTIGOS
+router.post("/articles/delete", (req, res) => {
+    var id = req.body.id;
+    if(id != undefined){
+        if(!isNaN(id)){
+            Article.destroy({
+                where: {
+                    id: id //Destroy uma categoria onde o id é igual o id da categoria
+                }
+            }).then( () => {
+                res.redirect("/admin/articles")
+            })
+        }else{ //SE NÃO FOR UM NUMERO
+            res.redirect("/admin/articles")
+        }
+    }else{ //NULL
+        res.redirect("/admin/articles")
+    }
+})
+
 module.exports = router
