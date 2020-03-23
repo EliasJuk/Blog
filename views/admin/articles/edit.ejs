@@ -23,7 +23,11 @@
             </div>
         </div>
     </div>
+    <div style="display: none;" id="content">
+        <%= article.body %>
+    </div>
 </body>
+
 <%- include ('../../partials/footer.ejs') %>
 <script src="/tinymce/tinymce.min.js"></script>
 <script> //CONFIGURAÇÃO DO TINY MCE
@@ -32,6 +36,9 @@
         selector: "#article",
         plugins: [
             'advlist autolink link image lists print preview hr searchreplace wordcount fullscreen insertdatetime media save table paste emoticons'
-        ]
+        ],
+        init_instance_callback: () => {
+            tinymce.get("article").setContent($("#content").html()) //ID TEXTAREA
+        }
     })
 </script>
