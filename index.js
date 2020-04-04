@@ -37,8 +37,9 @@ const articleController = require("./articles/articleController")
         app.get("/", (req, res) => {
             Article.findAll({
                 order:[
-                    ['id','DESC']
-                ]
+                    ['id','DESC'],    
+                ],
+                limit: 4
             }).then(articles => {
                 //MOSTRAR CATEGORIAS NAVBAR - RENDER
                 Category.findAll().then(categories => {
