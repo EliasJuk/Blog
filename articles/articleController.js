@@ -77,7 +77,7 @@ router.post("/articles/update", (req, res) => {
     var body = req.body.body
     var category = req.body.category
 
-    Article.update({title: title, body: body, categoryId: category, slug:slugify(title)},{
+    Article.update({ title: title, body: body, categoryId: category, slug:slugify(title)},{
         where: {
             id: id
         }
@@ -88,6 +88,7 @@ router.post("/articles/update", (req, res) => {
     })
 })
 
+<<<<<<< HEAD
 router.get("/articles/list", (req, res) => {
     Article.findAll().then(articles => {
         res.json(articles);
@@ -126,4 +127,6 @@ router.get("/articles/page/:num", (req, res) => {
     })
 })
 
+=======
+>>>>>>> parent of 31c46d4... �ð Sistema de paginação
 module.exports = router
