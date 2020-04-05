@@ -6,10 +6,12 @@ const connection = require('./database/database')
 //Import models module
 const Article = require('./articles/Article')
 const Category = require('./categories/Category')
+const User = require('./user/User')
 
 //Import routes module
 const categoriesController = require("./categories/categoriesController")
 const articleController = require("./articles/articleController")
+const userController = require("./user/userController")
 
 //CONFIG
     //View Engine
@@ -31,6 +33,7 @@ const articleController = require("./articles/articleController")
     //SET OTHER ROUTES FROM CATEGORIES
     app.use('/',categoriesController) //Prefix '/'
     app.use('/',articleController)
+    app.use('/',userController)
 
 //ROUTES
     //MAIN
