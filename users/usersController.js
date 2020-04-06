@@ -1,6 +1,6 @@
 const express = require('express')
 const router = express.Router()
-const Users = require('./user')
+const Users = require('./User')
 const bcrypt= require('bcryptjs')
 
 //LIST
@@ -40,6 +40,20 @@ const bcrypt= require('bcryptjs')
             }
         })
     })
+
+//DELETE
+    router.post("/admin/users/delete", (req, res) => {
+        var id = req.body.id;
+
+        Users.destroy({
+            where: {
+                id: id //Destroy uma categoria onde o id é igual o id da categoria
+            }
+        }).then( () => {
+            res.redirect("/admin/users")
+        })
+
+})
 
 
 module.exports = router;

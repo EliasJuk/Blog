@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
+const session = require('express-session')
 const connection = require('./database/database')
 
 //Import models module
@@ -16,6 +17,10 @@ const usersController = require("./users/usersController")
 //CONFIG
     //View Engine
         app.set("view engine", "ejs")
+    //Sessions
+        app.use(session({
+            secret: "GeekDarkSoulsStartWars", cookie: { maxAge: 30000000 }
+        }))
     //Statics
         app.use(express.static('public'))
     //Body Parser
