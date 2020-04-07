@@ -2,10 +2,11 @@ const express = require('express')
 const router = express.Router()
 const Users = require('./User')
 const bcrypt= require('bcryptjs')
+const adminAuth = require('../middlewares/adminAuth')
 
 //LIST
     //FORMULARIO DE LISTAGEM
-        router.get("/admin/users", (req, res) => {
+        router.get("/admin/users", adminAuth, (req, res) => {
             Users.findAll().then(users => {
                 res.render("admin/users/index", { users: users })
             })
@@ -13,12 +14,12 @@ const bcrypt= require('bcryptjs')
 
 //CREATE
     //FORMULARIO DE CRIAÇÃO
-        router.get("/admin/users/create", (req, res) => {
+        router.get("/admin/users/create", adminAuth, (req, res) => {
             res.render('admin/users/create')
         })
 
     //CADASTRA NO BANCO
-    router.post("/users/create", (req, res) => {
+    router.post("/users/create", adminAuth, (req, res) => {
         var email = req.body.email
         var password = req.body.password
 
@@ -43,7 +44,7 @@ const bcrypt= require('bcryptjs')
 
 
 //DELETE
-    router.post("/admin/users/delete", (req, res) => {
+    router.post("/admin/users/delete", adminAuth, (req, res) => {
         var id = req.body.id;
 
         Users.destroy({
@@ -75,7 +76,7 @@ const bcrypt= require('bcryptjs')
                             id: user.id,
                             email: user.email
                         }
-                        res.json(req.session.user)
+                        res.redirect("/admin/articles")
                     }else{
                         res.redirect("/login")
                     }
