@@ -86,4 +86,9 @@ const adminAuth = require('../middlewares/adminAuth')
             })
         })
 
+router.get("/logout", (req, res) => {
+    req.session.user = undefined
+    res.redirect("/")
+})
+
 module.exports = router;
