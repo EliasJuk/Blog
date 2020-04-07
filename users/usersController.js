@@ -41,6 +41,7 @@ const bcrypt= require('bcryptjs')
         })
     })
 
+
 //DELETE
     router.post("/admin/users/delete", (req, res) => {
         var id = req.body.id;
@@ -52,8 +53,36 @@ const bcrypt= require('bcryptjs')
         }).then( () => {
             res.redirect("/admin/users")
         })
-
 })
 
+//LOGIN
+    //LOGIN
+        router.get("/login", (req, res) => { 
+            res.render("admin/users/login")
+        })
+    //AUTHENTICATE
+        router.post("/authenticate", (req, res) => {
+            var email = req.body.email;
+            var password = req.body.password
+
+            Users.findOne({ where: {email: email}}).then(user => {
+                if(user != undefined){ //Se existe um usuario com esse e-mail
+                    // Validar Senha
+                    var correct = bcrypt.compareSync(password,user.password)
+
+                    if(correct){
+                        req.session.user = {
+                            id: user.id,
+                            email: user.email
+                        }
+                        res.json(req.session.user)
+                    }else{
+                        res.redirect("/login")
+                    }
+                }else{
+                    res.redirect("/login")
+                }
+            })
+        })
 
 module.exports = router;
