@@ -21,6 +21,28 @@
 	<a href="https://insomnia.rest/run/?label=Blog&uri=https://raw.githubusercontent.com/EliasJuk/blog-completo/master/readme/Insomnia_2020-04-07.json"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
+<h1 align="center">
+    <img alt="Blog" title="#Blog" src="readme/img/001.png" width="350px" />
+</h1>
+<h1 align="center">
+    <img alt="Blog" title="#Blog" src="readme/img/002.png" width="350px" />
+</h1>
+<h1 align="center">
+    <img alt="Blog" title="#Blog" src="readme/img/003.png" width="350px" />
+</h1>
+<h1 align="center">
+    <img alt="Blog" title="#Blog" src="readme/img/004.png" width="350px" />
+</h1>
+<h1 align="center">
+    <img alt="Blog" title="#Blog" src="readme/img/005.png" width="350px" />
+</h1>
+<h1 align="center">
+    <img alt="Blog" title="#Blog" src="readme/img/006.png" width="350px" />
+</h1>
+<h1 align="center">
+    <img alt="Blog" title="#Blog" src="readme/img/007.png" width="350px" />
+</h1>
+
 
 ## Estrutura
 >O projeto segue os padrões de projeto no modelo **MVC (Model View Controller)** ou seja a aplicação é divida por funcionalidades em varios arquivos separados que trabalham de forma independente entre si, onde os mesmos são invocados quando realmente são necessarios.
