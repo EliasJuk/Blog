@@ -25,7 +25,9 @@
 
 ## Tela Principal
 
-<img alt="Blog" title="#Blog" src="readme/img/001.png" width="350px" />
+>   Tela onde esta presente todos os artigos
+
+<img alt="Blog" title="#Blog" src="readme/img/001.png" width="70%" />
 
 
 
