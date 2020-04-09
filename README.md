@@ -1,5 +1,6 @@
-## BLOG Completo
-
+<h4 align="center">
+    <img alt="blog" title="#blog" src="readme/blog.png"/>
+</h4>
 
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/EliasJuk/blog-completo">	
@@ -45,7 +46,7 @@ This project was developed with the following technologies:
 
 >   Essa é a tela inicial onde esta presente todos os artigos postados, no topo do blog á uma seção de categorias, onde podemos filtrar artigos por cetegorias. 
 
-<img alt="Blog" title="#Blog" src="readme/img/001.png" width="70%" />
+<img alt="Blog" title="#Blog" src="readme/img/001.png" />
 
 
 ### Artigo
