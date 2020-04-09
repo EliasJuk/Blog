@@ -31,6 +31,13 @@ This project was developed with the following technologies:
 
 ---
 
+### Estrutura
+
+>O projeto segue os padrões de projeto no modelo **MVC (Model View Controller)** ou seja a aplicação é divida por funcionalidades em varios arquivos separados que trabalham de forma independente entre si, onde os mesmos são chamados quando realmente são necessarios.
+>O responsavel por controlar as rotas fora do arquivo principal do projeto é um module chamado **express-router**.
+
+---
+
 ## 🔖 Layout
 
 ### Tela Principal
@@ -51,14 +58,14 @@ This project was developed with the following technologies:
 
 <img alt="Blog" title="#Blog" src="readme/img/003.png" />
 
+###  Listagem de Categorias
 
+<img alt="Blog" title="#Blog" src="readme/img/004.png" />
 
+---
 
-## Estrutura
->O projeto segue os padrões de projeto no modelo **MVC (Model View Controller)** ou seja a aplicação é divida por funcionalidades em varios arquivos separados que trabalham de forma independente entre si, onde os mesmos são invocados quando realmente são necessarios.
->O responsavel por controlar as rotas fora do arquivo principal do projeto é um module chamado **express-router**.
+## SOBRE O EDITOR DE TEXTOS
 
-## EDITOR DE TEXTOS
->**Download:** https://www.tiny.cloud/get-tiny/self-hosted/
+- [Download](https://www.tiny.cloud/get-tiny/self-hosted/)
 
->**Traduções:** https://www.tiny.cloud/get-tiny/language-packages/
+- [Traduções](https://www.tiny.cloud/get-tiny/language-packages/)
