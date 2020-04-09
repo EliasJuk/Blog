@@ -21,13 +21,28 @@
 	<a href="https://insomnia.rest/run/?label=Blog&uri=https://raw.githubusercontent.com/EliasJuk/blog-completo/master/readme/Insomnia_2020-04-07.json"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
+---
 
+## :rocket: Technologies
+
+This project was developed with the following technologies:
+
+- [Node.js](https://nodejs.org/en/)
+
+---
+
+# 🔖 Layout
 
 ## Tela Principal
 
->   Tela onde esta presente todos os artigos
+>   Essa é a tela inicial onde esta presente todos os artigos postados, no topo do blog á uma seção de categorias, onde podemos filtrar artigos por cetegorias. 
 
 <img alt="Blog" title="#Blog" src="readme/img/001.png" width="70%" />
+
+
+## Artigo
+
+<img alt="Blog" title="#Blog" src="readme/img/002.png" />
 
 
 
