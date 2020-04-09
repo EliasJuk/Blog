@@ -61,21 +61,22 @@ This project was developed with the following technologies:
 
 
 ###  Listagem de Categorias
-
 <img alt="Blog" title="#Blog" src="readme/img/004.png" />
 
-
 ### Criação de uma nova categoria
-
 <img alt="Blog" title="#Blog" src="readme/img/005.png" />
 
+### Painel onde podemos criar um novo artigo
 <img alt="Blog" title="#Blog" src="readme/img/006.png" />
 
+### Gerenciar artigos publicados, podendo deleta-los ou editalos
 <img alt="Blog" title="#Blog" src="readme/img/007.png" />
 
-<img alt="Blog" title="#Blog" src="readme/img/008.png" />
-
+### Mostra todos os usuarios cadastrados que podem interagir no modo admin
 <img alt="Blog" title="#Blog" src="readme/img/009.png" />
+
+### Remove Usuarios
+<img alt="Blog" title="#Blog" src="readme/img/008.png" />
 
 ---
 
