@@ -1,4 +1,4 @@
-# BLOG Completo
+## BLOG Completo
 
 
 <p align="center">
@@ -31,10 +31,11 @@ This project was developed with the following technologies:
 
 ---
 
-### Estrutura
+### 📋 Estrutura
 
->O projeto segue os padrões de projeto no modelo **MVC (Model View Controller)** ou seja a aplicação é divida por funcionalidades em varios arquivos separados que trabalham de forma independente entre si, onde os mesmos são chamados quando realmente são necessarios.
->O responsavel por controlar as rotas fora do arquivo principal do projeto é um module chamado **express-router**.
+> O projeto segue os padrões de projeto no modelo **MVC (Model View Controller)** ou seja a aplicação é divida por funcionalidades em varios arquivos separados que trabalham de forma independente entre si, onde os mesmos são chamados quando realmente são necessarios.
+
+> O responsavel por controlar as rotas fora do arquivo principal do projeto é um module chamado **express-router**.
 
 ---
 
@@ -58,13 +59,19 @@ This project was developed with the following technologies:
 
 <img alt="Blog" title="#Blog" src="readme/img/003.png" />
 
+
 ###  Listagem de Categorias
 
 <img alt="Blog" title="#Blog" src="readme/img/004.png" />
 
+
+### Criação de uma nova categoria
+
+<img alt="Blog" title="#Blog" src="readme/img/005.png" />
+
 ---
 
-## SOBRE O EDITOR DE TEXTOS
+## 📝 Sobre o Editor de Textos
 
 - [Download](https://www.tiny.cloud/get-tiny/self-hosted/)
 
