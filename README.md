@@ -31,18 +31,25 @@ This project was developed with the following technologies:
 
 ---
 
-# 🔖 Layout
+## 🔖 Layout
 
-## Tela Principal
+### Tela Principal
 
 >   Essa é a tela inicial onde esta presente todos os artigos postados, no topo do blog á uma seção de categorias, onde podemos filtrar artigos por cetegorias. 
 
 <img alt="Blog" title="#Blog" src="readme/img/001.png" width="70%" />
 
 
-## Artigo
+### Artigo
 
 <img alt="Blog" title="#Blog" src="readme/img/002.png" />
+
+
+### Login
+
+> Para gerenciar artigos e categorias você deve start logado no blog, com isso você terá acesso a criação de novos artigos ou deleção dos mesmos, tambem podrá criar novas categorias ou remove-las.
+
+<img alt="Blog" title="#Blog" src="readme/img/003.png" />
 
 
 
