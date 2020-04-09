@@ -69,6 +69,14 @@ This project was developed with the following technologies:
 
 <img alt="Blog" title="#Blog" src="readme/img/005.png" />
 
+<img alt="Blog" title="#Blog" src="readme/img/006.png" />
+
+<img alt="Blog" title="#Blog" src="readme/img/007.png" />
+
+<img alt="Blog" title="#Blog" src="readme/img/008.png" />
+
+<img alt="Blog" title="#Blog" src="readme/img/009.png" />
+
 ---
 
 ## 📝 Sobre o Editor de Textos
